@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file here -->
+    <style>
+        /* Custom Styles */
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+            "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+            sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .flex { display: flex; }
+        .flex-col { flex-direction: column; }
+        .gap-2 { gap: 0.5rem; }
+        .gap-6 { gap: 1.5rem; }
+        .gap-8 { gap: 2rem; }
+        .px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+        .px-8 { padding-left: 2rem; padding-right: 2rem; }
+        .py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+        .py-10 { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+        .pt-8 { padding-top: 2rem; }
+        .text-8xl { font-size: 6rem; }
+        .text-xl { font-size: 1.25rem; }
+        .text-sm { font-size: 0.875rem; }
+        .text-lg { font-size: 1.125rem; }
+        .text-3xl { font-size: 1.875rem; }
+        .text-white { color: white; }
+        .text-primary { color: #6461b6; }
+        .text-secondary { color: #6977f5; }
+        .bg-light { background-color: #eef2ff; }
+        .bg-primary { background-color: #6461b6; }
+        .bg-secondary { background-color: #6977f5; }
+        .bg-tertiary { background-color: #c7d2fe; }
+        .bg-light-blue { background-color: #f1f4fb; }
+        .rounded-2xl { border-radius: 1rem; }
+        .rounded-xl { border-radius: 0.75rem; }
+        .rounded-3xl { border-radius: 1.5rem; }
+        .w-50 { width: 50%; }
+        .w-full { width: 100%; }
+        .w-32 { width: 8rem; }
+        .w-8 { width: 2rem; }
+        .h-auto { height: auto; }
+        .cursor-pointer { cursor: pointer; }
+        .justify-between { justify-content: space-between; }
+        .items-center { align-items: center; }
+        .pl-3 { padding-left: 0.75rem; }
+        .py-1 { padding-top: 0.25rem; padding-bottom: 0.25rem; }
+        .pr-1 { padding-right: 0.25rem; }
+        .p-2 { padding: 0.5rem; }
+        .text-center { text-align: center; }
+        .bg-white { background-color: white; }
+        .font-bold { font-weight: bold; }
+        .font-semibold { font-weight: 600; }
+        .font-extrabold { font-weight: 800; }
+        .list-none { list-style-type: none; }
+        .list-disc { list-style-type: disc; }
+    </style>
+</head>
+<body>
+    <!-- Navigation Component -->
+    <div class="bg-white flex justify-between py-3 px-6 items-center">
+        <div class="flex items-center gap-2 cursor-pointer" onclick="window.location.href='index.html'">
+            <img src='images/Img4.jpg' class="w-8" alt="Logo">
+            <p class="text-primary font-bold text-lg">NeuroPeace</p>
+        </div>
+        <div class="flex">
+            <ul class="flex gap-6 text-sm list-none">
+                <li onclick="window.location.href='Problem.html'" class="cursor-pointer">About Us</li>
+                <li onclick="window.location.href='index.html'" class="cursor-pointer">Home</li>
+                <li class="cursor-pointer">How it works</li>
+                <li class="cursor-pointer">Why NeuroPeace</li>
+                <li class="cursor-pointer">Our Team</li>
+                <li onclick="window.location.href='Success.html'" class="cursor-pointer">Success Stories</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex gap-2 px-8">
+        <div class="flex flex-col w-50">
+            <div class="pt-8">
+                <p class="text-8xl font-semibold">Your Mental Health Matters</p>
+                <p class="text-xl mt-4">Here you can find resources, tips, and support to help you improve your mental health.</p>
+                <span class="flex items-center bg-light mt-4 rounded-2xl pl-3 py-1 pr-1 gap-2 text-primary w-fit">
+                    Join the wave &rarr;
+                    <span class="bg-primary text-white p-2 rounded-xl">Subscribe</span>
+                </span>
+            </div>
+            <div class="flex justify-between gap-8 w-full mt-4">
+                <img src='images/Img2.jpg' class="rounded-2xl h-auto" alt="Image 2">
+            </div>
+        </div>
+        <div class="w-50 flex flex-col gap-2">
+            <img src='images/Img3.jpg' class="rounded-2xl h-auto" alt="Image 3">
+            <div class='flex justify-between w-full'>
+                <img src='images/Img1.jpg' class="rounded-2xl w-32 h-auto" alt="Image 1">
+                <img src='images/Img1.jpg' class="rounded-2xl w-32 h-auto" alt="Image 1">
+                <img src='images/Img1.jpg' class="rounded-2xl w-32 h-auto" alt="Image 1">
+                <img src='images/Img1.jpg' class="rounded-2xl w-32 h-auto" alt="Image 1">
+                <img src='images/Img1.jpg' class="rounded-2xl w-32 h-auto" alt="Image 1">
+            </div>
+        </div>
+    </div>
+</body> 
+</html>

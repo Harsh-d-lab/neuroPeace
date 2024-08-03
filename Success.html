@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Stories</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        /* Add custom styles here */
+        .section-white {
+            background: #fff;
+            padding: 60px 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .col-md-12 {
+            width: 100%;
+            text-align: center;
+        }
+        .col-sm-6 {
+            width: 50%;
+            padding: 15px;
+        }
+        .col-md-4 {
+            width: 33.3333%;
+            padding: 15px;
+        }
+        .section-title {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .section-subtitle {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 40px;
+        }
+        .team-item {
+            background: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+        .team-img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .team-info {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .team-info p {
+            margin: 0;
+            font-size: 14px;
+            color: #333;
+        }
+        .team-item h3 {
+            margin: 10px 0;
+            font-size: 24px;
+        }
+        .more {
+            margin-top: 10px;
+            text-align: left;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: none;
+            background: #007bff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <section class="section-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="section-title">Success Stories</h2>
+                    <p class="section-subtitle">Why people says about our services.</p>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="team-item">
+                        <img src="https://www.mentalhealth.org.uk/sites/default/files/styles/1296w/public/2022-09/Bella%20photo.webp?itok=EZEssf0j" class="team-img" alt="pic">
+                        <h3>BELL</h3>
+                        <div class="team-info">
+                            <p>anxiety</p>
+                        </div>
+                        <p>During my main school years, I had a lot of anxiety, particularly in social situations. After the COVID-19 lockdowns, the anxiety was definitely heightened.</p>
+                        <div class="more" id="more1" style="display: none;">
+                            <p>This made it incredibly hard to get to know others outside of my ‘comfort circle,’ but I knew it was something I needed to do. I understood that creating relationships with other people would challenge my own worries but also allow me to extend my network of friends. Eventually, I was able to broaden my horizons and start speaking to others by trying to be kind and trustworthy as often as possible. I began to understand that there are loads of advantages to meeting new people and creating healthy relationships with your peers at school.</p>
+                        </div>
+                        <button onclick="toggleReadMore(1)">Read More</button>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="team-item">
+                        <img src="https://www.mentalhealth.org.uk/sites/default/files/styles/1296w/public/2022-11/Steph-mhaw-skydive.webp?itok=yBfnKrEw" class="team-img" alt="pic">
+                        <h3>Steph</h3>
+                        <div class="team-info">
+                            <p>anxiety and mental health</p>
+                        </div>
+                        <p>For many years now I have lived with depression and anxiety. Depression has a habit of sneaking up when things start to get on top of me. It only takes a few triggers, and I can be sent into a tailspin.</p>
+                        <div class="more" id="more2" style="display: none;">
+                            <p>Thankfully, this doesn't happen too frequently, but when it does, it’s hard to see the light at the end of the tunnel. But from experience, I have found that there always is.</p>
+                        </div>
+                        <button onclick="toggleReadMore(2)">Read More</button>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="team-item">
+                        <img src="https://www.mentalhealth.org.uk/sites/default/files/styles/1296w/public/2023-06/Tyra-story.webp?itok=8TPj-WzL" class="team-img" alt="pic">
+                        <h3>TYra</h3>
+                        <div class="team-info">
+                            <p>facing my mirror</p>
+                        </div>
+                        <p>Teenagers sometimes have spots, and as a young teenager in school, this was something I experienced. It was never really a major concern for me since I recognised it was a part of puberty.</p>
+                        <div class="more" id="more3" style="display: none;">
+                            <p>So, a couple of spots here and there may have been different to my preteen spotless face, but it still was never drastic enough to worry me. This all changed when I reached my later teenage years. As I continued to grow and my body continued to develop, I started to notice my skin increasingly change.</p>
+                        </div>
+                        <button onclick="toggleReadMore(3)">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleReadMore(id) {
+            var moreText = document.getElementById("more" + id);
+            var btnText = moreText.nextElementSibling;
+
+            if (moreText.style.display === "none") {
+                moreText.style.display = "block";
+                btnText.textContent = "Read Less";
+            } else {
+                moreText.style.display = "none";
+                btnText.textContent = "Read More";
+            }
+        }
+    </script>
+</body>
+</html>
