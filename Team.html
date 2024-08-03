@@ -1,101 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mental peace</title>
-    <link href="main.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet" />
     <script src="https://unpkg.com/feather-icons"></script>
 
-     <!-- google font -->
-     <link rel="preconnect" href="https://fonts.googleapis.com" />
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-     <link
-       href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap"
-       rel="stylesheet"
-     />
-</head>
-<body>
-    <section class="relative">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
-        <div class="w-11/12 max-w-[1300px] mx-auto relative py-20">
-    
-          <img src="./IMAGE/dots.png" alt=""
-          class="absolute w-[200px] top-[8rem] left-[2rem] -z-10">
-    
-          <h2 class="font-mullish font-extrabold text-2xl text-deepBlueHead text-center">Our Team
-          </h2>
-          <div class="w-6 h-1 bg-greenLight mx-auto my-4"></div>
-    
-    
+    <style>
+      body {
+        font-family: 'Mulish', sans-serif;
+      }
+      .relative {
+        position: relative;
+      }
+      .w-11-12 {
+        width: 91.666667%;
+      }
+      .max-w-1300px {
+        max-width: 1300px;
+      }
+      .mx-auto {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .py-20 {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+      }
+      .absolute {
+        position: absolute;
+      }
+      .w-200px {
+        width: 200px;
+      }
+      .top-8rem {
+        top: 8rem;
+      }
+      .left-2rem {
+        left: 2rem;
+      }
+      .-z-10 {
+        z-index: -10;
+      }
+      .font-mullish {
+        font-family: 'Mulish', sans-serif;
+      }
+      .font-extrabold {
+        font-weight: 800;
+      }
+      .text-2xl {
+        font-size: 1.5rem;
+      }
+      .text-deepBlueHead {
+        color: #00008b; /* You may want to replace this with the exact color value */
+      }
+      .text-center {
+        text-align: center;
+      }
+      .w-6 {
+        width: 1.5rem;
+      }
+      .h-1 {
+        height: 0.25rem;
+      }
+      .bg-greenLight {
+        background-color: #90ee90; /* You may want to replace this with the exact color value */
+      }
+      .my-4 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+      .bg-f4f8ff {
+        background-color: #f4f8ff;
+      }
+      .rounded-full {
+        border-radius: 9999px;
+      }
+      .absolute {
+        position: absolute;
+      }
+      .left-0 {
+        left: 0;
+      }
+      .top-1-2 {
+        top: 50%;
+      }
+      .flex {
+        display: flex;
+      }
+      .justify-center {
+        justify-content: center;
+      }
+      .items-center {
+        align-items: center;
+      }
+      .mix-blend-multiply {
+        mix-blend-mode: multiply;
+      }
+      .stroke-5px {
+        stroke-width: 5px;
+      }
+      .w-6 {
+        width: 1.5rem;
+      }
+      .h-6 {
+        height: 1.5rem;
+      }
+      .text-gray-400 {
+        color: #d3d3d3; /* You may want to replace this with the exact color value */
+      }
+      .rotate-180 {
+        transform: rotate(180deg);
+      }
+      .right-0 {
+        right: 0;
+      }
+      .flex-col {
+        flex-direction: column;
+      }
+      .xl-flex-row {
+        flex-direction: row;
+      }
+      .max-w-960px {
+        max-width: 960px;
+      }
+      .my-20 {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+      }
+      .space-x-10rem {
+        gap: 10rem;
+      }
+      .rounded-xl {
+        border-radius: 1rem;
+      }
+      .max-w-400px {
+        max-width: 400px;
+      }
+      .font-extralight {
+        font-weight: 200;
+      }
+      .text-3xl {
+        font-size: 1.875rem;
+      }
+      .text-grayText {
+        color: #9ca3af; /* You may want to replace this with the exact color value */
+      }
+      .underline {
+        text-decoration: underline;
+      }
+      .font-medium {
+        font-weight: 500;
+      }
+      .w-full {
+        width: 100%;
+      }
+      .space-x-2 {
+        gap: 0.5rem;
+      }
+      .bg-gray-300 {
+        background-color: #d1d5db; /* You may want to replace this with the exact color value */
+      }
+      .bg-lightBlue300 {
+        background-color: #93c5fd; /* You may want to replace this with the exact color value */
+      }
+      .h-10px {
+        height: 10px;
+      }
+      .w-10px {
+        width: 10px;
+      }
+      .rounded-full {
+        border-radius: 9999px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="relative">
+      <div class="w-11-12 max-w-1300px mx-auto relative py-20">
+        <img
+          src="./IMAGE/dots.png"
+          alt=""
+          class="absolute w-200px top-8rem left-2rem -z-10"
+        />
+
+        <h2
+          class="font-mullish font-extrabold text-2xl text-deepBlueHead text-center"
+        >
+          Our Team
+        </h2>
+        <div class="w-6 h-1 bg-greenLight mx-auto my-4"></div>
+
         <!--left button -->
-        <button class="w-[100px] h-[100px] bg-[#f4f8ff] rounded-full absolute left-0 top-1/2
-         flex justify-center items-center ">
-          <div class="w-[65%] h-[65%] bg-[#f4f8ff] rounded-full flex justify-center items-center
-          mix-blend-multiply">
+        <button
+          class="w-100px h-100px bg-f4f8ff rounded-full absolute left-0 top-1-2 flex justify-center items-center"
+        >
+          <div
+            class="w-65% h-65% bg-f4f8ff rounded-full flex justify-center items-center mix-blend-multiply"
+          >
             <i
-            data-feather="chevron-right"
-            class="stroke-[5px] w-6 h-6  text-gray-400 rotate-180"
-          ></i>
+              data-feather="chevron-right"
+              class="stroke-5px w-6 h-6 text-gray-400 rotate-180"
+            ></i>
           </div>
         </button>
-    
-            <!--right button -->
-        <button class="w-[100px] h-[100px] bg-[#f4f8ff] rounded-full absolute right-0 top-1/2
-        flex justify-center items-center ">
-              <div class="w-[65%] h-[65%] bg-[#f4f8ff] rounded-full flex justify-center items-center
-              mix-blend-multiply">
-                <i
-                data-feather="chevron-right"
-                class="stroke-[5px] w-6 h-6  text-gray-400"
-              ></i>
-              </div>
+
+        <!--right button -->
+        <button
+          class="w-100px h-100px bg-f4f8ff rounded-full absolute right-0 top-1-2 flex justify-center items-center"
+        >
+          <div
+            class="w-65% h-65% bg-f4f8ff rounded-full flex justify-center items-center mix-blend-multiply"
+          >
+            <i
+              data-feather="chevron-right"
+              class="stroke-5px w-6 h-6 text-gray-400"
+            ></i>
+          </div>
         </button>
-    
-    
+
         <!-- main content -->
-        <div class="flex flex-col xl:flex-row max-w-[960px] items-center mx-auto my-20 space-x-[10rem]">
-          <img src="./IMAGE/sunil-grover-1-1491117348.jpg" alt=""
-          height="320px"
-          width="320px"
-          class="rounded-xl">
-    
+        <div
+          class="flex flex-col xl-flex-row max-w-960px items-center mx-auto my-20 space-x-10rem"
+        >
+          <img
+            src="./IMAGE/sunil-grover-1-1491117348.jpg"
+            alt=""
+            height="320px"
+            width="320px"
+            class="rounded-xl"
+          />
+
           <!-- right part-->
-          <div class="max-w-[400px] flex flex-col">
-            <img src="./IMAGE/quotes.svg" alt=""
-            width="35px"
-            height="40px"
-            class="-mb-2 xl:order-1">
-            <p class="font-mullish text-3xl font-extralight xl:order-1">
-             Skilled person or specializing in healing arts</p>
-            <a href="#" class="text-grayText italic underline xl:order-1">Know More</a>
-            <p class="font-mullish font-extrabold text-2xl -order-1 xl:order-1">Dr.Mashoor Gulati</p>
-            <p class="font-mullish font-medium xl:order-1"> Physiotherapist</p>
-            <img src="./IMAGE/logo.png" alt="" width="80px" height="40px" class=" xl:order-1">
+          <div class="max-w-400px flex flex-col">
+            <img
+              src="./IMAGE/quotes.svg"
+              alt=""
+              width="35px"
+              height="40px"
+              class="-mb-2 xl-order-1"
+            />
+            <p class="font-mullish text-3xl font-extralight xl-order-1">
+              Skilled person or specializing in healing arts
+            </p>
+            <a href="#" class="text-grayText italic underline xl-order-1"
+              >Know More</a
+            >
+            <p class="font-mullish font-extrabold text-2xl -order-1 xl-order-1">
+              Dr.Mashoor Gulati
+            </p>
+            <p class="font-mullish font-medium xl-order-1">Physiotherapist</p>
+            <img
+              src="./IMAGE/logo.png"
+              alt=""
+              width="80px"
+              height="40px"
+              class="xl-order-1"
+            />
           </div>
         </div>
-    
+
         <!-- 6 dots-->
         <div class="w-full flex flex-row mx-auto space-x-2 justify-center">
+          <div class="h-10px w-10px bg-gray-300 rounded-full"></div>
 
-          <div class="h-[10px] w-[10px] bg-gray-300 rounded-full"></div>
-    
-          <div class="h-[10px] w-[10px] bg-lightBlue300 rounded-full"></div>
-    
-          <div class="h-[10px] w-[10px] bg-gray-300 rounded-full"></div>
-    
-          <div class="h-[10px] w-[10px] bg-gray-300 rounded-full"></div>
-    
-          <div class="h-[10px] w-[10px] bg-gray-300 rounded-full"></div>
-    
-          <div class="h-[10px] w-[10px] bg-gray-300 rounded-full"></div>
-    
+          <div class="h-10px w-10px bg-lightBlue300 rounded-full"></div>
+
+          <div class="h-10px w-10px bg-gray-300 rounded-full"></div>
+
+          <div class="h-10px w-10px bg-gray-300 rounded-full"></div>
+
+          <div class="h-10px w-10px bg-gray-300 rounded-full"></div>
+
+          <div class="h-10px w-10px bg-gray-300 rounded-full"></div>
         </div>
       </div>
-    
-      </section>
-      <script>
-        feather.replace()
-      </script>
-</body>
+    </section>
+    <script>
+      feather.replace();
+    </script>
+  </body>
 </html>
