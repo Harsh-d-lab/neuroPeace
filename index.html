@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file here -->
     <style>
         /* Custom Styles */
         body {
@@ -61,23 +60,55 @@
         .font-extrabold { font-weight: 800; }
         .list-none { list-style-type: none; }
         .list-disc { list-style-type: disc; }
+
+        .navbar {
+            background-color: white;
+            color: #6977f5;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 1.5rem;
+        }
+
+        .navbar-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+        }
+
+        .navbar-logo img {
+            width: 2rem;
+        }
+
+        .navbar-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar-links li {
+            cursor: pointer;
+            font-size: 0.875rem;
+        }
     </style>
 </head>
 <body>
     <!-- Navigation Component -->
-    <div class="bg-white flex justify-between py-3 px-6 items-center">
-        <div class="flex items-center gap-2 cursor-pointer" onclick="window.location.href='index.html'">
-            <img src='images/Img4.jpg' class="w-8" alt="Logo">
+    <div class="navbar">
+        <div class="navbar-logo" onclick="window.location.href='index.html'">
+            <img src='images/Img4.jpg' alt="Logo">
             <p class="text-primary font-bold text-lg">NeuroPeace</p>
         </div>
-        <div class="flex">
-            <ul class="flex gap-6 text-sm list-none">
-                <li onclick="window.location.href='Problem.html'" class="cursor-pointer">About Us</li>
-                <li onclick="window.location.href='index.html'" class="cursor-pointer">Home</li>
-                <li onclick="window.location.href='Team.html'" class="cursor-pointer">Our Team</li>
-                <li onclick="window.location.href='Success.html'" class="cursor-pointer">Success Stories</li>
-            </ul>
-        </div>
+        <ul class="navbar-links">
+            <li onclick="window.location.href='index.html'">Home</li>
+            <li onclick="window.location.href='Problem.html'">About Us</li>
+            <li onclick="window.location.href='Team.html'">Our Team</li>
+            <li onclick="window.location.href='Success.html'">Success Stories</li>
+            <li onclick="window.location.href='Contact.html'">Contact Us</li>
+        </ul>
     </div>
     <!-- Main Content -->
     <div class="flex gap-8 px-8 py-10">
@@ -97,6 +128,9 @@
         <div class="w-50 flex flex-col gap-8">
             <img src='images/Img3.jpg' class="rounded-2xl h-auto w-full" alt="Image 3">
             <div class='flex justify-between w-full gap-2'>
+                <img src='images/Img1.jpg' class="rounded-2xl w-32 h-auto" alt="Image 1">
+                <img src='images/Img1.jpg' class="rounded-2xl w-32 h-auto" alt="Image 1">
+                <img src='images/Img1.jpg' class="rounded-2xl w-32 h-auto" alt="Image 1">
                 <img src='images/Img1.jpg' class="rounded-2xl w-32 h-auto" alt="Image 1">
             </div>
         </div>

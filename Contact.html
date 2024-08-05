@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>team</title>
+    <title>Contact Us</title>
     <script src="https://unpkg.com/feather-icons"></script>
 
     <!-- Google Font -->
@@ -52,7 +52,7 @@
             font-size: 1.5rem;
         }
         .text-deepBlueHead {
-            color: #00008b;
+            color: #6977f5;
         }
         .divider {
             width: 1.5rem;
@@ -181,6 +181,65 @@
             background-color: #f1f4fb;
             border-radius: 5px;
         }
+        .footer {
+            background-color: #6977f5;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .contact-section {
+            background-color: #f4f8ff;
+            padding: 3rem 0;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            padding: 1rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: 'Mulish', sans-serif;
+            font-size: 1rem;
+        }
+        .contact-form button {
+            padding: 1rem;
+            background-color: #6977f5;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Mulish', sans-serif;
+            font-size: 1rem;
+        }
+        .contact-form button:hover {
+            background-color: #000066;
+        }
+        .social-media {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+        .social-media a {
+            margin: 0 0.5rem;
+            color: white;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        .social-media a:hover {
+            color: #90ee90;
+        }
     </style>
 </head>
 <body>
@@ -200,51 +259,34 @@
             </ul>
         </div>
     </div>
-
-    <section class="relative">
+    <!-- Contact Us Section -->
+    <section class="contact-section">
         <div class="container">
-            <img src="./IMAGE/dots.png" alt="" class="absolute w-200px top-8rem left-2rem -z-10">
-            <h2 class="text-center font-bold text-2xl text-deepBlueHead">Our Team</h2>
+            <h2 class="text-center font-bold text-2xl text-deepBlueHead">Contact Us</h2>
             <div class="divider"></div>
-
-            <!-- Navigation Buttons -->
-            <button class="w-100px h-100px bg-f4f8ff rounded-full absolute left-0 top-1-2 flex justify-center items-center" style="transform: translateY(-50%);">
-                <div class="w-65% h-65% bg-f4f8ff rounded-full flex justify-center items-center mix-blend-multiply">
-                    <i data-feather="chevron-right" class="stroke-5px w-6 h-6 text-gray-400 rotate-180"></i>
-                </div>
-            </button>
-
-            <button class="w-100px h-100px bg-f4f8ff rounded-full absolute right-0 top-1-2 flex justify-center items-center" style="transform: translateY(-50%);">
-                <div class="w-65% h-65% bg-f4f8ff rounded-full flex justify-center items-center mix-blend-multiply">
-                    <i data-feather="chevron-right" class="stroke-5px w-6 h-6 text-gray-400"></i>
-                </div>
-            </button>
-
-            <!-- Main Content -->
-            <div class="flex flex-col xl-flex-row max-w-960px items-center mx-auto my-20 space-x-10rem">
-                <img src="./IMAGE/sunil-grover-1-1491117348.jpg" alt="" height="320px" width="320px" class="rounded-xl">
-
-                <div class="max-w-400px flex flex-col">
-                    <img src="./IMAGE/quotes.svg" alt="" width="35px" height="40px" class="-mb-2 xl-order-1">
-                    <p class="font-mullish text-3xl font-extralight xl-order-1">Skilled person or specializing in healing arts</p>
-                    <a href="#" class="text-grayText italic underline xl-order-1">Know More</a>
-                    <p class="font-mullish font-extrabold text-2xl -order-1 xl-order-1">Dr. Mashoor Gulati</p>
-                    <p class="font-mullish font-medium xl-order-1">Physiotherapist</p>
-                    <img src="./IMAGE/logo.png" alt="" width="80px" height="40px" class="xl-order-1">
-                </div>
-            </div>
-
-            <!-- Navigation Dots -->
-            <div class="w-full flex flex-row mx-auto space-x-2 justify-center">
-                <div class="h-10px w-10px bg-gray-300 rounded-full"></div>
-                <div class="h-10px w-10px bg-lightBlue300 rounded-full"></div>
-                <div class="h-10px w-10px bg-gray-300 rounded-full"></div>
-                <div class="h-10px w-10px bg-gray-300 rounded-full"></div>
-                <div class="h-10px w-10px bg-gray-300 rounded-full"></div>
-                <div class="h-10px w-10px bg-gray-300 rounded-full"></div>
-            </div>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </div>
     </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 NeuroPeace. All rights reserved.</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            <div class="social-media">
+                <a href="https://github.com/Harsh-d-lab/neuroPeace" target="_blank"><i data-feather="github"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i data-feather="facebook"></i></a>
+                <a href="https://x.com/DhamajiHarsh" target="_blank"><i data-feather="twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i data-feather="instagram"></i></a>
+                <a href="https://www.linkedin.com/in/harsh-dhama-06a5921aa/" target="_blank"><i data-feather="linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
     <script>
         feather.replace();
     </script>

@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Success Stories</title>
-    <link href="styles.css" rel="stylesheet"> <!-- Link to your CSS file -->
     <style>
-        /* Add custom styles here */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
         .navbar {
-            background-color: #00008b;
-            padding: 1rem;
+            background-color: white;
+            color: #6977f5;
+            padding: 1rem 1.5rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -23,7 +22,6 @@
             display: flex;
             align-items: center;
             cursor: pointer;
-            color: white;
         }
         .navbar .logo img {
             width: 2rem;
@@ -31,7 +29,7 @@
         }
         .navbar ul {
             display: flex;
-            list-style-type: none; /* Remove bullet points */
+            list-style-type: none;
             margin: 0;
             padding: 0;
         }
@@ -39,13 +37,11 @@
             margin: 0 1rem;
             padding: 0.5rem;
             font-size: 14px;
-            color: white;
             cursor: pointer;
             transition: background-color 0.3s, color 0.3s;
         }
         .navbar ul li:hover {
-            background-color: #003366;
-            color: #ffffff;
+            background-color: #f1f4fb;
             border-radius: 5px;
         }
         .section-white {
@@ -72,9 +68,10 @@
         }
         .col-md-4 {
             width: 33.3333%;
-            padding: 15px;
+            padding: 10px; /* Reduced padding */
         }
         .section-title {
+            color: #6977f5;
             font-size: 36px;
             margin-bottom: 10px;
         }
@@ -86,7 +83,7 @@
         .team-item {
             background: #f9f9f9;
             border-radius: 8px;
-            padding: 20px;
+            padding: 15px; /* Reduced padding */
             text-align: center;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
@@ -116,7 +113,7 @@
             margin-top: 10px;
             padding: 10px 20px;
             border: none;
-            background: #007bff;
+            background: #6977f5;
             color: white;
             border-radius: 5px;
             cursor: pointer;
@@ -135,10 +132,11 @@
         </div>
         <div>
             <ul>
-                <li onclick="window.location.href='Problem.html'">About Us</li>
                 <li onclick="window.location.href='index.html'">Home</li>
+                <li onclick="window.location.href='Problem.html'">About Us</li>
                 <li onclick="window.location.href='Team.html'">Our Team</li>
                 <li onclick="window.location.href='Success.html'">Success Stories</li>
+                <li onclick="window.location.href='Contact.html'">Contact Us</li>
             </ul>
         </div>
     </div>
@@ -184,16 +182,16 @@
 
                 <div class="col-sm-6 col-md-4">
                     <div class="team-item">
-                        <img src="https://static.wixstatic.com/media/78be5e_c93363319c8c4c2598dde3696d46d6a9~mv2.jpg/v1/fill/w_1000,h_563,al_c,q_85,usm_0.66_1.00_0.01/78be5e_c93363319c8c4c2598dde3696d46d6a9~mv2.jpg" class="team-img" alt="Steph">
+                        <img src="https://static.wixstatic.com/media/78be5e_c93363319c8c4c2598dde3696d46d6a9~mv2.jpg/v1/fill/w_1000,h_563,al_c,q_85,usm_0.66_1.00_0.01/78be5e_c93363319c8c4c2598dde3696d46d6a9~mv2.jpg" class="team-img" alt="Harsh">
                         <h3>Harsh</h3>
                         <div class="team-info">
                             <p>Anxiety and Mental Health</p>
                         </div>
                         <p>For many years now I have lived with depression and anxiety. Depression has a habit of sneaking up when things start to get on top of me. It only takes a few triggers, and I can be sent into a tailspin.</p>
-                        <div class="more" id="more2" style="display: none;">
+                        <div class="more" id="more3" style="display: none;">
                             <p>Thankfully, this doesn't happen too frequently, but when it does, it’s hard to see the light at the end of the tunnel. But from experience, I have found that there always is.</p>
                         </div>
-                        <button onclick="toggleReadMore(2)">Read More</button>
+                        <button onclick="toggleReadMore(3)">Read More</button>
                     </div>
                 </div>
 
@@ -205,10 +203,10 @@
                             <p>Facing My Mirror</p>
                         </div>
                         <p>Teenagers sometimes have spots, and as a young teenager in school, this was something I experienced. It was never really a major concern for me since I recognised it was a part of puberty.</p>
-                        <div class="more" id="more3" style="display: none;">
+                        <div class="more" id="more4" style="display: none;">
                             <p>So, a couple of spots here and there may have been different to my preteen spotless face, but it still was never drastic enough to worry me. This all changed when I reached my later teenage years. As I continued to grow and my body continued to develop, I started to notice my skin increasingly change.</p>
                         </div>
-                        <button onclick="toggleReadMore(3)">Read More</button>
+                        <button onclick="toggleReadMore(4)">Read More</button>
                     </div>
                 </div>
             </div>

@@ -44,23 +44,56 @@
         .cursor-pointer { cursor: pointer; }
         .text-lg { font-size: 1.125rem; }
         .no-bullets { list-style-type: none; padding: 0; margin: 0; }
+
+        /* Shared Navigation Bar Styles */
+        .navbar {
+            background-color: white;
+            color: #6977f5;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 1.5rem;
+        }
+
+        .navbar-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+        }
+
+        .navbar-logo img {
+            width: 2rem;
+        }
+
+        .navbar-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar-links li {
+            cursor: pointer;
+            font-size: 0.875rem;
+        }
     </style>
 </head>
 <body>
     <!-- Navigation Component -->
-    <div class="bg-white flex justify-between py-3 px-6 items-center">
-        <div class="flex items-center gap-2 cursor-pointer" onclick="window.location.href='index.html'">
-            <img src='images/Img4.jpg' class="w-8" alt="Logo">
+    <div class="navbar">
+        <div class="navbar-logo" onclick="window.location.href='index.html'">
+            <img src='images/Img4.jpg' alt="Logo">
             <p class="text-primary font-bold text-lg">NeurPeace</p>
         </div>
-        <div class="flex">
-            <ul class="flex gap-6 text-sm no-bullets">
-                <li onclick="window.location.href='Problem.html'" class="cursor-pointer">About Us</li>
-                <li onclick="window.location.href='index.html'" class="cursor-pointer">Home</li>
-                <li onclick="window.location.href='Team.html'" class="cursor-pointer">Our Team</li>
-                <li onclick="window.location.href='Success.html'" class="cursor-pointer">Success Stories</li>
-            </ul>
-        </div>
+        <ul class="navbar-links">
+            <li onclick="window.location.href='index.html'">Home</li>
+            <li onclick="window.location.href='Problem.html'">About Us</li>
+            <li onclick="window.location.href='Team.html'">Our Team</li>
+            <li onclick="window.location.href='Success.html'">Success Stories</li>
+            <li onclick="window.location.href='Contact.html'">Contact Us</li>
+        </ul>
     </div>
     <!-- Main Content -->
     <div class="py-10 px-16 flex flex-col gap-6">
