@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: white;
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        .navbar .logo img {
+            width: 2rem;
+            margin-right: 0.5rem;
+        }
+        .navbar ul {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar ul li {
+            margin: 0 1rem;
+            padding: 0.5rem;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .navbar ul li:hover {
+            background-color: #f1f4fb;
+            border-radius: 5px;
+        }
+        .section-white {
+            background: #fff;
+            padding: 60px 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .col-md-12 {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .services-section {
+            text-align: center;
+            padding: 60px 0;
+        }
+        .services-title {
+            color: #6977f5;
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+        .services-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .service-item {
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .service-item i {
+            font-size: 40px;
+            color: #6977f5;
+            margin-bottom: 20px;
+        }
+        .service-item h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .service-item p {
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-dy48SBQ+TuIwLt1Jk+bbE4cPB4lF6+UjN1pC/zpC5zlO9NfHOesw4F9ls8sB6PYV" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Navigation Component -->
+    <div class="navbar">
+        <div class="logo" onclick="window.location.href='index.html'">
+            <img src='images/Img4.jpg' alt="Logo">
+            <p class="text-primary font-bold text-lg">NeuroPeace</p>
+        </div>
+        <div>
+            <ul>
+                <li onclick="window.location.href='index.html'">Home</li>
+                <li onclick="window.location.href='Problem.html'">About Us</li>
+                <li onclick="window.location.href='Team.html'">Our Team</li>
+                <li onclick="window.location.href='Services.html'">Services</li>
+                <li onclick="window.location.href='Success.html'">Success Stories</li>
+                <li onclick="window.location.href='Contact.html'">Contact Us</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section class="section-white services-section">
+        <div class="container">
+            <div class="col-md-12 text-center">
+                <h2 class="services-title">Our Services</h2>
+            </div>
+            <div class="services-list">
+                <div class="service-item">
+                    <i class="fas fa-user-md"></i>
+                    <div>
+                        <h3>Online Therapy Sessions</h3>
+                        <p>Access licensed therapists through secure video calls from the comfort of your home.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-book"></i>
+                    <div>
+                        <h3>Self-Help Resources</h3>
+                        <p>Explore articles, videos, and interactive tools designed to help you understand and manage mental health issues.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-users"></i>
+                    <div>
+                        <h3>Support Groups</h3>
+                        <p>Join online communities where you can share experiences and receive support from others facing similar challenges.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-headset"></i>
+                    <div>
+                        <h3>24/7 Crisis Support</h3>
+                        <p>Get immediate assistance through our crisis helpline available around the clock.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-stethoscope"></i>
+                    <div>
+                        <h3>Mental Health Assessments</h3>
+                        <p>Take confidential assessments to understand your mental health better and receive personalized recommendations.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <div>
+                        <h3>Educational Workshops</h3>
+                        <p>Participate in workshops and webinars hosted by mental health professionals to learn more about mental wellness.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
