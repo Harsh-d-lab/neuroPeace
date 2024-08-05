@@ -43,32 +43,33 @@
         .px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
         .cursor-pointer { cursor: pointer; }
         .text-lg { font-size: 1.125rem; }
+        .no-bullets { list-style-type: none; padding: 0; margin: 0; }
     </style>
 </head>
 <body>
     <!-- Navigation Component -->
     <div class="bg-white flex justify-between py-3 px-6 items-center">
-        <div class="flex items-center gap-2 cursor-pointer" onclick="window.location.href='/'">
+        <div class="flex items-center gap-2 cursor-pointer" onclick="window.location.href='index.html'">
             <img src='images/Img4.jpg' class="w-8" alt="Logo">
-            <p class="text-primary font-bold text-lg">Poruch</p>
+            <p class="text-primary font-bold text-lg">NeurPeace</p>
         </div>
         <div class="flex">
-            <ul class="flex gap-6 text-sm list-none">
-                <li onclick="window.location.href='/problem'" class="cursor-pointer">About Us</li>
+            <ul class="flex gap-6 text-sm no-bullets">
+                <li onclick="window.location.href='Problem.html'" class="cursor-pointer">About Us</li>
+                <li onclick="window.location.href='index.html'" class="cursor-pointer">Home</li>
                 <li class="cursor-pointer">How it works</li>
-                <li class="cursor-pointer">Why Poruch</li>
-                <li class="cursor-pointer">Our team</li>
-                <li class="cursor-pointer">Blog</li>
+                <li class="cursor-pointer">Why NeuroPeace</li>
+                <li onclick="window.location.href='Team.html'" class="cursor-pointer">Our Team</li>
+                <li onclick="window.location.href='Success.html'" class="cursor-pointer">Success Stories</li>
             </ul>
         </div>
     </div>
-
     <!-- Main Content -->
-    <div class="py-10 px-16 flex gap-6 flex-col">
+    <div class="py-10 px-16 flex flex-col gap-6">
         <div class="w-full">
             <div class="bg-secondary rounded-3xl p-6">
-                <h1 class="text-3xl text-white font-extrabold">What is Poruch?</h1>
-                <p class="mt-2 text-white">Poruch is an <strong>online program</strong> of <strong>psychological</strong> support, <strong>mental health</strong> and self-discovery. We are a <strong>team</strong> that is ready to <strong>help you</strong> in difficult life situations and <strong>support</strong> you on the way to mental health and <strong>development</strong>.</p>
+                <h1 class="text-3xl text-white font-extrabold">What is NeurPeace?</h1>
+                <p class="mt-2 text-white">NeurPeace is an <strong>online program</strong> of <strong>psychological</strong> support, <strong>mental health</strong>, and self-discovery. We are a <strong>team</strong> ready to <strong>help you</strong> in difficult life situations and <strong>support</strong> you on the way to mental health and <strong>development</strong>.</p>
             </div>
         </div>
         <div class="flex gap-10 justify-between">
@@ -76,15 +77,15 @@
                 <h1 class="text-3xl text-primary font-extrabold">Problem</h1>
                 <ul class="text-primary mt-2 flex flex-col gap-2 list-disc pl-3">
                     <li><strong>Fear</strong> and distrust of psychology and doubts that it helps.</li>
-                    <li>Fear of receiving <strong>psychological support</strong> without remaining privacy.</li>
-                    <li><strong>Sessions</strong> with psychologists are shameful and a sign of <strong>weakness</strong> or shortcomings.</li>
+                    <li>Fear of receiving <strong>psychological support</strong> without remaining private.</li>
+                    <li><strong>Sessions</strong> with psychologists are seen as shameful and a sign of <strong>weakness</strong> or shortcomings.</li>
                     <li><strong>Ineffective Communication</strong> with psychological specialists.</li>
                 </ul>
             </div>
             <div class="bg-light-blue rounded-3xl p-6 w-50">
                 <h1 class="text-3xl text-primary font-extrabold">Solution</h1>
                 <ul class="text-primary mt-2 flex flex-col gap-2 list-disc pl-3">
-                    <li>The professionalism of specialists is <strong>detailed</strong> by <strong>information</strong> about psychologists and 2 psychotherapists.</li>
+                    <li>The professionalism of specialists is <strong>detailed</strong> by <strong>information</strong> about psychologists and psychotherapists.</li>
                     <li>Broadcast of <strong>successful cases</strong> of other clients where they share how they solved their problems and how therapy helped them.</li>
                     <li>An opportunity to <strong>receive psychological support</strong> for those who want to keep their problems and conversations <strong>confidential.</strong></li>
                 </ul>
