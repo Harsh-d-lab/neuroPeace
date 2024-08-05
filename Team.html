@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
     <style>
         body {
             font-family: 'Mulish', sans-serif;
@@ -161,26 +160,43 @@
             text-decoration: none;
             margin: 0 1rem;
         }
+        .navbar ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .navbar li {
+            margin: 0 1rem;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        .navbar .logo img {
+            width: 2rem;
+            margin-right: 0.5rem;
+        }
     </style>
 </head>
 <body>
-     <!-- Navigation Component -->
-     <div class="bg-white flex justify-between py-3 px-6 items-center">
-      <div class="flex items-center gap-2 cursor-pointer" onclick="window.location.href='index.html'">
-          <img src='images/Img4.jpg' class="w-8" alt="Logo">
-          <p class="text-primary font-bold text-lg">NeuroPeace</p>
-      </div>
-      <div class="flex">
-          <ul class="flex gap-6 text-sm list-none">
-              <li onclick="window.location.href='Problem.html'" class="cursor-pointer">About Us</li>
-              <li onclick="window.location.href='index.html'" class="cursor-pointer">Home</li>
-              <li class="cursor-pointer">How it works</li>
-              <li class="cursor-pointer">Why NeuroPeace</li>
-              <li onclick="window.location.href='Team.html'" class="cursor-pointer">Our Team</li>
-              <li onclick="window.location.href='Success.html'" class="cursor-pointer">Success Stories</li>
-          </ul>
-      </div>
-  </div>
+    <!-- Navigation Component -->
+    <div class="navbar">
+        <div class="logo" onclick="window.location.href='index.html'">
+            <img src='images/Img4.jpg' alt="Logo">
+            <p class="text-primary font-bold text-lg">NeuroPeace</p>
+        </div>
+        <ul>
+            <li><a href="Problem.html">About Us</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Team.html">Our Team</a></li>
+            <li><a href="Success.html">Success Stories</a></li>
+        </ul>
+    </div>
 
     <section class="relative">
         <div class="container">
