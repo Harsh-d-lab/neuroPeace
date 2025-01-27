@@ -1,2 +1,3 @@
 # neuroPeace
-https://harsh-d-lab.github.io/neuroPeace/
+
+[neuroPeace](https://harsh-d-lab.github.io/neuroPeace/)
