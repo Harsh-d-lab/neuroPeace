@@ -23,21 +23,15 @@
             font-family: 'Mulish', sans-serif;
         }
 
-        /* Container Styling */
-        .container {
-            max-width: 1300px;
-            margin: 0 auto;
-            padding: 5rem 1rem;
-        }
-
-        /* Navbar */
+        /* Navbar Styling */
         .navbar {
-            background-color: #ffffff;
+            background-color: white;
+            color: #6977f5;
             padding: 1rem 1.5rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 1px solid #e5e7eb;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .navbar .logo {
@@ -69,7 +63,7 @@
             border-radius: 5px;
         }
 
-        /* Section Styling */
+        /* Team Section Styling */
         section {
             position: relative;
             text-align: center;
@@ -88,36 +82,6 @@
             margin: 1rem auto;
         }
 
-        /* Buttons */
-        .nav-button {
-            width: 4rem;
-            height: 4rem;
-            background-color: #f4f8ff;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            cursor: pointer;
-        }
-
-        .nav-button.left {
-            left: 1rem;
-        }
-
-        .nav-button.right {
-            right: 1rem;
-        }
-
-        .nav-button i {
-            width: 1.5rem;
-            height: 1.5rem;
-            color: #d3d3d3;
-        }
-
-        /* Team Member Section */
         .team {
             display: flex;
             justify-content: center;
@@ -167,6 +131,34 @@
             margin-bottom: 1rem;
         }
 
+        .nav-button {
+            width: 4rem;
+            height: 4rem;
+            background-color: #f4f8ff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        .nav-button.left {
+            left: 1rem;
+        }
+
+        .nav-button.right {
+            right: 1rem;
+        }
+
+        .nav-button i {
+            width: 1.5rem;
+            height: 1.5rem;
+            color: #d3d3d3;
+        }
+
         /* Navigation Dots */
         .nav-dots {
             display: flex;
@@ -206,12 +198,12 @@
                 <p class="font-bold text-lg">NeuroPeace</p>
             </div>
             <ul>
-                <li onclick="window.location.href='index.html'" aria-label="Go to Home">Home</li>
-                <li onclick="window.location.href='Problem.html'" aria-label="About Us">About Us</li>
-                <li onclick="window.location.href='Team.html'" aria-label="Our Team">Our Team</li>
-                <li onclick="window.location.href='Services.html'" aria-label="Services">Services</li>
-                <li onclick="window.location.href='Success.html'" aria-label="Success Stories">Success Stories</li>
-                <li onclick="window.location.href='Contact.html'" aria-label="Contact Us">Contact Us</li>
+                <li onclick="window.location.href='index.html'">Home</li>
+                <li onclick="window.location.href='Problem.html'">About Us</li>
+                <li onclick="window.location.href='Team.html'">Our Team</li>
+                <li onclick="window.location.href='Services.html'">Services</li>
+                <li onclick="window.location.href='Success.html'">Success Stories</li>
+                <li onclick="window.location.href='Contact.html'">Contact Us</li>
             </ul>
         </nav>
     </header>
@@ -223,10 +215,10 @@
             <div class="divider"></div>
 
             <!-- Navigation Buttons -->
-            <button class="nav-button left" aria-label="Previous Team Member">
+            <button class="nav-button left">
                 <i data-feather="chevron-left"></i>
             </button>
-            <button class="nav-button right" aria-label="Next Team Member">
+            <button class="nav-button right">
                 <i data-feather="chevron-right"></i>
             </button>
 
