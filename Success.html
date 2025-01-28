@@ -68,13 +68,14 @@
     .team-container {
       display: flex;
       gap: 20px;
-      overflow-x: hidden;
+      overflow: hidden;
       padding: 20px;
-      transition: transform 0.3s ease-in-out;
     }
 
-    .team-container:hover {
-      animation: scrollHorizontally 10s linear infinite;
+    .team-wrapper {
+      display: flex;
+      gap: 20px;
+      animation: scrollHorizontally 20s linear infinite;
     }
 
     @keyframes scrollHorizontally {
@@ -82,17 +83,8 @@
         transform: translateX(0);
       }
       100% {
-        transform: translateX(-50%);
+        transform: translateX(-100%);
       }
-    }
-
-    .team-container::-webkit-scrollbar {
-      height: 8px;
-    }
-
-    .team-container::-webkit-scrollbar-thumb {
-      background-color: #6977f5;
-      border-radius: 5px;
     }
 
     .team-card {
@@ -148,32 +140,58 @@
   <div class="section">
     <h1>Success Stories</h1>
     <div class="team-container">
-      <div class="team-card">
-        <img src="./IMAGE/Emily-psychologist.png" alt="Success Story 1">
-        <h3>Story 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div class="team-card">
-        <img src="./IMAGE/Emily-psychologist.png" alt="Success Story 2">
-        <h3>Story 2</h3>
-        <p>Vivamus lacinia odio vitae vestibulum vestibulum.</p>
-      </div>
-      <div class="team-card">
-        <img src="./IMAGE/Emily-psychologist.png" alt="Success Story 3">
-        <h3>Story 3</h3>
-        <p>Cras ultricies ligula sed magna dictum porta.</p>
-      </div>
-      <div class="team-card">
-        <img src="./IMAGE/Emily-psychologist.png" alt="Success Story 4">
-        <h3>Story 4</h3>
-        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris.</p>
-      </div>
-      <div class="team-card">
-        <img src="./IMAGE/Emily-psychologist.png" alt="Success Story 5">
-        <h3>Story 5</h3>
-        <p>Curabitur blandit tempus porttitor.</p>
+      <div class="team-wrapper" id="teamWrapper">
+        <!-- Cards will be dynamically inserted here -->
       </div>
     </div>
   </div>
+
+  <script>
+    const stories = [
+      {
+        image: "./IMAGE/Emily-psychologist.png",
+        title: "Story 1: Overcoming Anxiety",
+        description: "Emily, a young professional, conquered crippling anxiety with our support, regaining confidence and thriving in her career."
+      },
+      {
+        image: "./IMAGE/mark.jpg",
+        title: "Story 2: Rebuilding Relationships",
+        description: "Mark reconnected with his family after years of emotional struggle, thanks to personalized counseling sessions."
+      },
+      {
+        image: "./IMAGE/lisa.png",
+        title: "Story 3: Embracing New Beginnings",
+        description: "Lisa turned her life around by addressing long-standing depression and building a positive outlook on her future."
+      },
+      {
+        image: "./IMAGE/dhamaji.png",
+        title: "Story 4: Triumph Over Trauma",
+        description: "After surviving a traumatic event, Sam found healing and a renewed sense of purpose with our dedicated therapy plans."
+      },
+      {
+        image: "./IMAGE/sophia.png",
+        title: "Story 5: Unlocking Potential",
+        description: "Sophia, once hesitant and unsure, unlocked her creative potential and started her own successful business."
+      }
+    ];
+
+    const teamWrapper = document.getElementById("teamWrapper");
+
+    function renderStories() {
+      for (let i = 0; i < stories.length * 3; i++) {
+        const story = stories[i % stories.length];
+        const card = document.createElement("div");
+        card.className = "team-card";
+        card.innerHTML = `
+          <img src="${story.image}" alt="${story.title}">
+          <h3>${story.title}</h3>
+          <p>${story.description}</p>
+        `;
+        teamWrapper.appendChild(card);
+      }
+    }
+
+    renderStories();
+  </script>
 </body>
 </html>
